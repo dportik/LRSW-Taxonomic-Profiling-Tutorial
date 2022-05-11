@@ -173,8 +173,8 @@ The directory should now contain the following:
 │	└── ATCC.fastq.gz
 │
 ├── krakenbracken_analysis/
-│   │
-│	└── kraken_db/
+│    │
+│	 └── kraken_db/
 │	    ├── hash.k2d
 │	    ├── opts.k2d
 │	    ├── taxo.k2d
