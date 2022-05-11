@@ -47,6 +47,26 @@ The main objective is to obtain a kraken-style report (kreport) for each method.
 + `NCBI Taxon ID`: Numerical ID from the NCBI taxonomy database.
 + `Scientific Name`: The scientific name of the taxon.
 
+Example contents of a kreport:
+
+```
+88.41	2138742	193618	K	2	Bacteria
+0.16	3852	818	P	201174	  Actinobacteria
+0.13	3034	0	C	1760	    Actinomycetia
+0.13	3034	45	O	85009	      Propionibacteriales
+0.12	2989	1847	F	31957	        Propionibacteriaceae
+0.05	1142	352	G	1912216	          Cutibacterium
+0.03	790	790	S	1747	            Cutibacterium acnes
+10.07	243594	9919	P	976	  Bacteroidetes
+9.66	233675	996	C	200643	    Bacteroidia
+9.62	232679	65248	O	171549	      Bacteroidales
+6.92	167431	1059	F	171551	        Porphyromonadaceae
+6.88	166372	36434	G	836	          Porphyromonas
+5.37	129938	129938	S	837	            Porphyromonas gingivalis
+```
+
+You are welcome to run some or all of the analyses. Outputs from each analysis are provided in the [**Example_Outputs**](https://github.com/dportik/LRSW-Taxonomic-Profiling-Tutorial/tree/main/Example_Outputs), and can be used to run the comparative analysis.
+
 [**Back to top**](#TOP)
 
 ## Example Dataset <a name="EXDA"></a>
@@ -440,7 +460,8 @@ Following completion of the workflow, the `MEGAN-RMA-Summary` workflow can be us
 
 ## Comparative Analysis <a name="COMP"></a>
 
-Results from the different methods can be compared using the Jupyter notebook available from: https://osf.io/uzk64/
+Outputs from each analysis are provided in the [**Example_Outputs**](https://github.com/dportik/LRSW-Taxonomic-Profiling-Tutorial/tree/main/Example_Outputs).
+The results from the different methods can be compared using the Jupyter notebook available from: https://osf.io/uzk64/
 
 This notebook will:
 + calculate read utilization
