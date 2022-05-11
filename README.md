@@ -87,7 +87,7 @@ $ git clone https://github.com/lh3/seqtk.git
 $ cd seqtk; make
 ```
 
-The example dataset used for the tutorial is [**ATCC** MSA-1003](https://www.atcc.org/products/msa-1003), sequencing with PacBio HiFi. The ATCC MSA-1003 mock community contains 20 bacteria species with the following staggered design:
+The example dataset used for the tutorial is [**ATCC MSA-1003**](https://www.atcc.org/products/msa-1003), sequencing with PacBio HiFi. The ATCC MSA-1003 mock community contains 20 bacteria species with the following staggered design:
 
 |Number of species| Relative abundance|
 |----:|----:|
@@ -98,7 +98,7 @@ The example dataset used for the tutorial is [**ATCC** MSA-1003](https://www.atc
 
 The dataset was generated using the Sequel II System and contains 2.4 million HiFi reads with a median length of 8.3 kb, for a total of 20.5 Gbp of data.
 
-This dataset is available on NCBI (SRR9328980). We can download it as a `fastq.gz` file that is ~15 Gb in size. We will need to convert this to `fasta` format for several programs. The following commands can be used to download the data, rename the file, and convert to fasta format:
+This dataset is available on NCBI ([**SRR9328980**](https://www.ncbi.nlm.nih.gov/sra/SRR9328980)). We can download it as a `fastq.gz` file that is ~15 Gb in size. We will need to convert this to `fasta` format for several programs. The following commands can be used to download the data, rename the file, and convert to fasta format:
 
 ```
 # make directory for data
@@ -154,6 +154,7 @@ For manual installation, follow instructions for **Kraken2** ([**here**](https:/
 # create a directory for the analysis
 $ mkdir krakenbracken_analysis
 $ cd krakenbracken_analysis
+
 # make a directory to hold the database files
 $ mkdir kraken_db
 $ cd kraken_db
@@ -343,10 +344,11 @@ $ cd mmseqs2_analysis
 
 # download & prepare database (adjust threads as necessary)
 $ mmseqs databases UniRef50 db_uniref50 tmp --threads 24
+
 # remove the temporary directory
 $ rm tmp
 
-# to download NR instead, you could use the following commands:
+# to download NCBI NR instead, you could use the following commands:
 $ mkdir ncbi_nr
 $ mmseqs databases NR ncbi_nr tmp --threads 24
 $ rm tmp
@@ -451,9 +453,11 @@ Submit the analysis and wait for the results by email (typically <24 hrs).
 
 Unlike the other programs listed above, there is a PacBio workflow available for this method. It is called `Taxonomic-Functional-Profiling-Protein` and is available on github in the [**pb-metagenomics-tools**](https://github.com/PacificBiosciences/pb-metagenomics-tools) repo. 
 
-You will likely need access to an HPC to successfully run the analysis, because it requires substantial resources to run. For complete instructions on how to run the workflow, please see the tutorial [**here**](https://github.com/PacificBiosciences/pb-metagenomics-tools/blob/master/docs/Tutorial-Taxonomic-Functional-Profiling-Protein.md). The NCBI nr database must be downloaded and indexed by **Diamond**, and you must download **MEGAN-LR** and the associated mapping file before beginning. Instructions for doing this are also included in the tutorial. This analysis can take up to a couple days to run.
+You will need access to an HPC to successfully run the analysis, because it requires substantial resources to run. This analysis can take multiple days to finish running. For complete instructions on how to run the workflow, please see the tutorial [**here**](https://github.com/PacificBiosciences/pb-metagenomics-tools/blob/master/docs/Tutorial-Taxonomic-Functional-Profiling-Protein.md). The NCBI nr database must be downloaded and indexed by **Diamond**, and you must download **MEGAN-LR** and the associated mapping file before beginning. Instructions for doing this are included in the tutorial. 
 
 Following completion of the workflow, the `MEGAN-RMA-Summary` workflow can be used to generate a taxonomic report. Complete instructions for running this workflow are available [**here**](https://github.com/PacificBiosciences/pb-metagenomics-tools/blob/master/docs/Tutorial-MEGAN-RMA-summary.md). This workflow could be run locally, as it is not as resource intensive.
+
+**NOTE**: The PacBio profiling pipeline is under development and is expected to change into a single workflow over the next couple months. 
 
 [**Back to top**](#TOP)
 
@@ -461,14 +465,14 @@ Following completion of the workflow, the `MEGAN-RMA-Summary` workflow can be us
 ## Comparative Analysis <a name="COMP"></a>
 
 Outputs from each analysis are provided in the [**Example_Outputs**](https://github.com/dportik/LRSW-Taxonomic-Profiling-Tutorial/tree/main/Example_Outputs).
-The results from the different methods can be compared using the Jupyter notebook available from: https://osf.io/uzk64/
+The results from the different methods can be compared using the **Jupyter** notebook available from: https://osf.io/uzk64/
 
-This notebook will:
-+ calculate read utilization
-+ calculate precision, recall, F-measures at the species and genus level
-+ produce visualizations for a variety of characteristics
+This notebook will produce:
++ read utilization metrics (how many reads are assigned, and to which taxonomic rank)
++ precision, recall, F-measures at the species and genus level
++ visualizations for dataset characteristics
 
-To use the notebook, you will need to have `jupyter` installed. Installation instructions can be found [**here**](https://jupyter.org/install). The notebook also requires having the following Python libraries installed: `pandas`, `seaborn`, and `matplotlib`. These could be installed in a conda environment or using `pip` (as in the jupyter installation).
+To use the notebook, you will need to have **Jupyter** installed. Installation instructions can be found [**here**](https://jupyter.org/install). The notebook also requires having the following Python libraries installed: `pandas`, `seaborn`, and `matplotlib`. These could be installed in a conda environment or using `pip` (as in the jupyter installation).
 
 Then, run the following to start a session:
 ```
