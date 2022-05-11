@@ -173,8 +173,8 @@ The directory should now contain the following:
 │	└── ATCC.fastq.gz
 │
 ├── krakenbracken_analysis/
-│    │
-│	 └── kraken_db/
+│	│
+│	└── kraken_db/
 │	    ├── hash.k2d
 │	    ├── opts.k2d
 │	    ├── taxo.k2d
@@ -215,10 +215,10 @@ The directory should now contain two kreport files with the taxonomic profiles f
 │	└── ATCC.fastq.gz
 │
 ├── krakenbracken_analysis/
-│   ├── ATCC.bracken
-│   ├── ATCC.bracken.kreport.txt   <- kreport from Bracken
-│   ├── ATCC.kraken
-│   ├── ATCC.kraken.kreport.txt    <- kreport from Kraken2
+│	├── ATCC.bracken
+│	├── ATCC.bracken.kreport.txt   <- kreport from Bracken
+│	├── ATCC.kraken
+│	├── ATCC.kraken.kreport.txt    <- kreport from Kraken2
 │	└── kraken_db/
 ```
 
