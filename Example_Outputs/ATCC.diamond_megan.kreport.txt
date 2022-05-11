@@ -1,0 +1,72 @@
+88.41	2138742	193618	K	2	Bacteria
+0.16	3852	818	P	201174	  Actinobacteria
+0.13	3034	0	C	1760	    Actinomycetia
+0.13	3034	45	O	85009	      Propionibacteriales
+0.12	2989	1847	F	31957	        Propionibacteriaceae
+0.05	1142	352	G	1912216	          Cutibacterium
+0.03	790	790	S	1747	            Cutibacterium acnes
+10.07	243594	9919	P	976	  Bacteroidetes
+9.66	233675	996	C	200643	    Bacteroidia
+9.62	232679	65248	O	171549	      Bacteroidales
+6.92	167431	1059	F	171551	        Porphyromonadaceae
+6.88	166372	36434	G	836	          Porphyromonas
+5.37	129938	129938	S	837	            Porphyromonas gingivalis
+0.01	324	0	P	1297	  Deinococcus-Thermus
+0.01	324	8	C	188787	    Deinococci
+0.01	316	0	O	118964	      Deinococcales
+0.01	316	0	F	183710	        Deinococcaceae
+0.01	316	316	G	1298	          Deinococcus
+20.33	491765	8913	P	1239	  Firmicutes
+18.88	456762	24779	C	91061	    Bacilli
+9.28	224443	14275	O	1385	      Bacillales
+1.83	44293	1191	F	186817	        Bacillaceae
+1.78	43102	39900	G	1386	          Bacillus
+0.13	3202	3202	S	1396	            Bacillus cereus
+6.86	165875	205	F	90964	        Staphylococcaceae
+6.85	165670	86104	G	1279	          Staphylococcus
+0.46	11022	11022	S	1280	            Staphylococcus aureus
+2.83	68544	68544	S	1282	            Staphylococcus epidermidis
+8.58	207540	8196	O	186826	      Lactobacillales
+0.05	1180	101	F	33958	        Lactobacillaceae
+0.04	1079	609	G	1578	          Lactobacillus
+0.02	470	470	S	1596	            Lactobacillus gasseri
+8.19	198164	1816	F	1300	        Streptococcaceae
+8.12	196348	102054	G	1301	          Streptococcus
+0.34	8266	8266	S	1311	            Streptococcus agalactiae
+3.56	86028	86028	S	1309	            Streptococcus mutans
+1.08	26090	64	C	186801	    Clostridia
+1.08	26026	773	O	186802	      Eubacteriales
+1.04	25253	157	F	31979	        Clostridiaceae
+1.04	25096	7814	G	1485	          Clostridium
+0.71	17282	17282	S	1520	            Clostridium beijerinckii
+49.84	1205589	104927	P	1224	  Proteobacteria
+25.96	628020	120727	C	28211	    Alphaproteobacteria
+20.97	507293	22873	O	204455	      Rhodobacterales
+20.03	484420	133914	F	31989	        Rhodobacteraceae
+7.02	169849	0	G	1653176	          Cereibacter
+7.02	169849	169849	S	1063	            Cereibacter sphaeroides
+7.47	180657	180657	G	1060	          Rhodobacter
+0.1	2393	101	C	28216	    Betaproteobacteria
+0.09	2292	9	O	206351	      Neisseriales
+0.09	2283	75	F	481	        Neisseriaceae
+0.09	2208	1825	G	482	          Neisseria
+0.02	383	383	S	487	            Neisseria meningitidis
+0.06	1458	0	C	29547	    Epsilonproteobacteria
+0.06	1458	32	O	213849	      Campylobacterales
+0.06	1426	1	F	72293	        Helicobacteraceae
+0.06	1425	69	G	209	          Helicobacter
+0.06	1356	1356	S	210	            Helicobacter pylori
+19.38	468791	18599	C	1236	    Gammaproteobacteria
+15.03	363645	19776	O	91347	      Enterobacterales
+14.22	343869	236529	F	543	        Enterobacteriaceae
+4.44	107340	14712	G	561	          Escherichia
+3.83	92628	92628	S	562	            Escherichia coli
+0.15	3629	0	O	2887326	      Moraxellales
+0.15	3629	16	F	468	        Moraxellaceae
+0.15	3613	2087	G	469	          Acinetobacter
+0.06	1526	1526	S	470	            Acinetobacter baumannii
+3.43	82918	7388	O	72274	      Pseudomonadales
+3.12	75530	85	F	135621	        Pseudomonadaceae
+3.12	75445	13972	G	286	          Pseudomonas
+2.54	61473	61473	S	287	            Pseudomonas aeruginosa
+0.03	766	766	K	2759	Eukaryota
