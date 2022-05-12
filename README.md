@@ -10,8 +10,8 @@
 + [**Kraken2 & Bracken**](#KRBR)
 + [**Centrifuge**](#CENT)
 + [**MMSeqs2**](#MMSEQ)
-+ [**BugSeq**](#BS)
-+ [**Diamond & MEGAN-LR**](#MEG)
++ [**BugSeq**](#BS) <- top performing method
++ [**Diamond & MEGAN-LR**](#MEG) <- top performing method
 
 **Summary**
 + [**Comparative Analysis**](#COMP)
@@ -29,8 +29,8 @@ The above study evaluated a total of 9 methods using four mock community dataset
 + **Bracken**
 + **Centrifuge**
 + **MMseqs2**
-+ **BugSeq**
-+ **Diamond + MEGAN-LR**
++ **BugSeq**  <- top performing method
++ **Diamond + MEGAN-LR**  <- top performing method
 
 The top-performing methods were **BugSeq** and **Diamond + MEGAN-LR**, both in terms of precision/recall and relative abundance estimates. **MMSeqs2** performed moderately well, whereas **Kraken2**, **Bracken**, and **Centrifuge** performed less well. There is plenty of room for the development of newer and better tools for profiling long-read datasets. However, these existing tools serve an important function and provide a baseline for future improvements.
 
